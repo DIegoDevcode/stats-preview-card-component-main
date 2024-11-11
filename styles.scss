@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Outfit:wght@700&display=swap");
+:root {
+  //Primary colors
+  --Very-dark-blue-main-background: hsl(233, 47%, 7%);
+  --Dark-desaturated-blue-card-background: hsl(244, 38%, 16%);
+  --Soft-violet-accent: hsl(277, 64%, 61%);
+
+  //Neutral colors
+  --White: hsl(0, 0%, 100%);
+  --Slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Slightly-transparent-white-hover: hsla(0, 0%, 100%, 0.9);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  list-style: none;
+  background-color: var(--Very-dark-blue-main-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.grid-container-general {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 0px;
+  width: 50%; /* Ajusta el ancho según tus necesidades */
+  max-width: 1200px; /* Ajusta el ancho máximo según tus necesidades */
+  margin: auto; /* Centra el contenedor */
+}
+
+.information-container {
+  background-color: var(--Dark-desaturated-blue-card-background);
+  height: 300px;
+  h1 {
+    width: 300px;
+    color: var(--White);
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0 auto;
+    letter-spacing: 0.2px;
+    padding: 10px 0;
+    .purple {
+      color: var(--Soft-violet-accent);
+    }
+  }
+
+  p {
+    font-size: 15px;
+    width: 330px;
+    margin: 0 auto;
+    color: var(--Slightly-transparent-white-hover);
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+  }
+}
+
+.stats-container {
+  width: 100%;
+  .list-flex {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    .number {
+      display: block; /* Hace que el número ocupe toda la línea */
+      font-size: 15px; /* Ajusta el tamaño del número */
+      font-weight: bold; /* Hace que el número sea negrita */
+      font-weight: 700;
+        color: var(--White);
+        font-family: "Inter", sans-serif;
+    }
+
+    .text {
+      display: block; /* Hace que el texto ocupe toda la línea */
+      font-size: 15px; /* Ajusta el tamaño del texto */
+      color: var(--White);
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+
+    }
+  }
+}
+
+img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
